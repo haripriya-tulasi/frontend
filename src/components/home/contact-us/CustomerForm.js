@@ -35,28 +35,28 @@ const CustomerForm = () => {
             }, 3000);
         }
         
-        // else {
-        //     console.log(values)
-
-        //     fetch("https://backend.hyderabad-packers-movers.in/customer/customerDetails",{
-        //         method:"POST",
-        //         headers:{"Content-Type":"application/json"},
-        //         body:JSON.stringify(values)                
-        //     }).then(()=>{
-        //         console.log("New user added")
-        //     })
-        //     }
-
         else {
             console.log(values)
-            fetch("http://localhost:8081/customer/customerDetails",{
+
+            fetch("https://backend.hyderabad-packers-movers.in/customer/customerDetails",{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(values)                
             }).then(()=>{
                 console.log("New user added")
             })
-        }
+            }
+
+        // else {
+        //     console.log(values)
+        //     fetch("http://localhost:8081/customer/customerDetails",{
+        //         method:"POST",
+        //         headers:{"Content-Type":"application/json"},
+        //         body:JSON.stringify(values)                
+        //     }).then(()=>{
+        //         console.log("New user added")
+        //     })
+        // }
         
     };
 
