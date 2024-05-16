@@ -39,10 +39,10 @@ function Home() {
             <Card style={{ background: `url(${HomeImage})` }} className='image-container' >
               <div className = "redirectButtonContainer">
                 <Link to={"/driver-details"} >
-                    <button className="button">Driver details</button>
+                    <button className="button">Driver Details</button>
                 </Link>
                 <Link to={"/customer-details"}>
-                    <button className="button">Customer details</button>
+                    <button className="button">Customer Details</button>
                 </Link>
               </div>
             </Card>
